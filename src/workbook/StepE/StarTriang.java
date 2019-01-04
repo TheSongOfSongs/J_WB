@@ -12,13 +12,10 @@ public class StarTriang {
 	{
 		for(int i=0; i<height; i++) // 라인 증가
 		{
-			for(int j=0; j<blank; j++)
-				System.out.printf(" ");
-			
-			for(int j=i; j<height; j++)
-				System.out.printf(" ");
-			
-			for(int j=0;j<i; j++)
+			for(int j=0; j<(blank+height-i+1); j++)
+				System.out.print(" ");
+				
+			for(int j=0;j<(i+1); j++)
 				System.out.printf("*");
 		
 			System.out.println(); // 줄 바꿈
