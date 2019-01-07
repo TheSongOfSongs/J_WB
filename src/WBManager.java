@@ -11,6 +11,8 @@ import workbook.StepH.StepHManager;
 import workbook.StepI.StepIManager;
 import workbook.StepJ.StepJManager;
 import workbook.StepK.StepKManager;
+import workbook.StepL.StepLManager;
+
 
 public class WBManager {
 	public static void main(String[] args) {
@@ -41,6 +43,8 @@ public class WBManager {
 			new StepJManager();
 		else if(step.equalsIgnoreCase("K"))
 			new StepKManager();
+		else if(step.equalsIgnoreCase("L"))
+			new StepLManager();
 		
 		System.out.printf("종료되었습니다.\n");
 	}	
